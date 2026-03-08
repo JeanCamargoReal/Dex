@@ -19,16 +19,23 @@ struct PersistenceController {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
         // Cria alguns dados de exemplo para as previews.
-        for _ in 0..<10 {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-        }
+        let newPokemon = Pokemon(context: viewContext)
+        newPokemon.id = 1
+        newPokemon.name = "bulbasaur"
+        newPokemon.types = ["grass", "poison"]
+        newPokemon.hp = 45
+        newPokemon.attack = 49
+        newPokemon.defense = 49
+        newPokemon.specialAttack = 65
+        newPokemon.specialDefense = 65
+        newPokemon.speed = 45
+        newPokemon.sprite = URL(string: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png")
+        newPokemon.shiny = URL(string: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/1.png")
+        
         do {
             try viewContext.save()
         } catch {
-            // Em um app real, o erro deve ser tratado adequadamente em vez de usar fatalError().
-            let nsError = error as NSError
-            fatalError("Erro não resolvido \(nsError), \(nsError.userInfo)")
+            print(error)
         }
         return result
     }()
