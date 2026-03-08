@@ -62,11 +62,12 @@ struct PersistenceController {
                  * Falta de espaço em disco.
                  * Incompatibilidade na migração de versão do modelo.
                  */
-                fatalError("Erro não resolvido \(error), \(error.userInfo)")
+                print(error)
             }
         })
         
         // Garante que as mudanças no contexto pai sejam automaticamente mescladas no viewContext.
+        container.viewContext.mergePolicy = NSMergePolicy.mergeByPropertyStoreTrump
         container.viewContext.automaticallyMergesChangesFromParent = true
     }
 }
