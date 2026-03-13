@@ -17,6 +17,7 @@ struct ContentView: View {
     ) private var pokedex
     
     @State private var searchText = ""
+    @State private var filterByFavorites = false
     
     let fetcher = FetchService()
     
@@ -30,6 +31,9 @@ struct ContentView: View {
         }
         
         // Filter by favorite predicate
+        if filterByFavorites {
+            predicates.append(NSPredicate(format: "favorite == %d", true))
+        }
         
         // Combine predicates
         return NSCompoundPredicate(andPredicateWithSubpredicates: predicates)
@@ -50,8 +54,16 @@ struct ContentView: View {
                         .frame(width: 100, height: 100)
                         
                         VStack(alignment: .leading) {
-                            Text(pokemon.name!)
-                                .fontWeight(.bold)
+                        
+                            HStack {
+                                Text(pokemon.name!.capitalized)
+                                    .fontWeight(.bold)
+                                
+                                if pokemon.favorite {
+                                    Image(systemName: "star.fill")
+                                        .foregroundStyle(.yellow)
+                                }
+                            }
                             
                             HStack {
                                 ForEach(pokemon.types!, id: \.self) { type in
@@ -75,12 +87,23 @@ struct ContentView: View {
             .onChange(of: searchText) {
                 pokedex.nsPredicate = dynamicPredicate
             }
+            .onChange(of: filterByFavorites) {
+                pokedex.nsPredicate = dynamicPredicate
+            }
             .navigationDestination(for: Pokemon.self, destination: { pokemon in
                 Text(pokemon.name ?? "no name")
             })
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
+                    Button {
+                        filterByFavorites.toggle()
+                    } label: {
+                        Label(
+                            "Filter By Favorites",
+                            systemImage: filterByFavorites ? "star.fill" : "star"
+                        )
+                    }
+                    .tint(.yellow)
                 }
                 ToolbarItem {
                     Button("Add Item", systemImage: "plus") {
@@ -110,6 +133,10 @@ struct ContentView: View {
                     pokemon.speed = fetchedPokemon.speed
                     pokemon.sprite = fetchedPokemon.sprite
                     pokemon.shiny = fetchedPokemon.shiny
+                    
+                    try viewContext.save()
+                } catch {
+                    print(error)
                 }
             }
         }
