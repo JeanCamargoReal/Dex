@@ -11,10 +11,20 @@ import CoreData
 struct PersistenceController {
     /// Uma instância compartilhada (Singleton) para ser usada em todo o app.
     static let shared = PersistenceController()
+    
+    static var previewPokemon: Pokemon {
+        let context = PersistenceController.preview.container.viewContext
+        
+        let fetchRequest: NSFetchRequest<Pokemon> = Pokemon.fetchRequest()
+        fetchRequest.fetchLimit = 1
+        
+        let results = try! context.fetch(fetchRequest)
+        
+        return results.first!
+    }
 
     /// Uma instância configurada especificamente para as Previews do SwiftUI.
     /// Ela usa armazenamento em memória para que os dados não sejam persistidos permanentemente.
-    @MainActor
     static let preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
