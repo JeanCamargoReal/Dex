@@ -19,8 +19,8 @@ struct FetchPokemon: Decodable {
     let specialAttack: Int16
     let specialDefense: Int16
     let speed: Int16
-    let sprite: URL
-    let shiny: URL
+    let spriteURL: URL
+    let shinyURL: URL
     
     /// Define as chaves de mapeamento para o JSON. 
     /// Devido à estrutura aninhada da PokéAPI, utilizamos enums internos para navegar nas camadas.
@@ -47,8 +47,8 @@ struct FetchPokemon: Decodable {
         
         // Mapeamento das URLs das imagens dentro de 'sprites'
         enum SpriteKeys: String, CodingKey {
-            case sprite = "frontDefault"
-            case shiny = "frontShiny"
+            case spriteURL = "frontDefault"
+            case shinyURL = "frontShiny"
         }
     }
     
@@ -114,7 +114,7 @@ struct FetchPokemon: Decodable {
             keyedBy: CodingKeys.SpriteKeys.self,
             forKey: .sprites
         )
-        self.sprite = try spriteContainer.decode(URL.self, forKey: .sprite)
-        self.shiny = try spriteContainer.decode(URL.self, forKey: .shiny)
+        self.spriteURL = try spriteContainer.decode(URL.self, forKey: .spriteURL)
+        self.shinyURL = try spriteContainer.decode(URL.self, forKey: .shinyURL)
     }
 }
