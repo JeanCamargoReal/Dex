@@ -7,11 +7,27 @@
 
 import WidgetKit
 import SwiftUI
+import CoreData
 
 // MARK: - Provider (Provedor de dados da Timeline)
 // O Provider é responsável por fornecer os dados que o widget vai exibir.
 // Ele conforma ao protocolo TimelineProvider, que exige 3 funções obrigatórias.
 struct Provider: TimelineProvider {
+    var randomPokemon: Pokemon {
+        var results: [Pokemon] = []
+        
+        do {
+            results = try PersistenceController.shared.container.viewContext
+                .fetch(Pokemon.fetchRequest())
+        } catch {
+            print("Couldn't fetch: \(error)")
+        }
+        
+        if let randomPokemon = results.randomElement() {
+            return randomPokemon
+        }
+        return PersistenceController.previewPokemon
+    }
 
     // Retorna um entry de placeholder, usado enquanto o widget ainda está carregando.
     // É o que aparece como "preview" antes dos dados reais estarem disponíveis.
@@ -35,9 +51,18 @@ struct Provider: TimelineProvider {
         // Gera 5 entries, cada uma com 1 hora de diferença, a partir da data atual.
         // O sistema exibirá cada entry no horário correspondente.
         let currentDate = Date()
-        for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry.placeholder
+        for hourOffset in 0 ..< 10 {
+            let entryDate = Calendar.current.date(byAdding: .second,
+                                                  value: hourOffset * 5,
+                                                  to: currentDate)!
+
+            let entryPokemon = randomPokemon
+
+            let entry = SimpleEntry(date: entryDate,
+                                    name: entryPokemon.name!,
+                                    types: entryPokemon.types!,
+                                    spriteData: entryPokemon.sprite)
+
             entries.append(entry)
         }
 
@@ -55,23 +80,30 @@ struct SimpleEntry: TimelineEntry {
     let date: Date   // A data/hora em que esta entry deve ser exibida
     let name: String
     let types: [String]
-    let sprite: Image
-    
+    let spriteData: Data?
+
+    var sprite: Image {
+        if let data = spriteData, let uiImage = UIImage(data: data) {
+            return Image(uiImage: uiImage)
+        }
+        return Image(.bulbasaur)
+    }
+
     static var placeholder: SimpleEntry {
         SimpleEntry(
             date: .now,
             name: "bulbasaur",
             types: ["grass", "poison"],
-            sprite: Image(.bulbasaur)
+            spriteData: nil
         )
     }
-    
+
     static var placeholder2: SimpleEntry {
         SimpleEntry(
             date: .now,
             name: "mew",
             types: ["psychic"],
-            sprite: Image(.mew)
+            spriteData: nil
         )
     }
 }

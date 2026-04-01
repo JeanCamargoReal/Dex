@@ -11,15 +11,15 @@ import CoreData
 struct PersistenceController {
     /// Uma instância compartilhada (Singleton) para ser usada em todo o app.
     static let shared = PersistenceController()
-    
+
     static var previewPokemon: Pokemon {
         let context = PersistenceController.preview.container.viewContext
-        
+
         let fetchRequest: NSFetchRequest<Pokemon> = Pokemon.fetchRequest()
         fetchRequest.fetchLimit = 1
-        
+
         let results = try! context.fetch(fetchRequest)
-        
+
         return results.first!
     }
 
@@ -41,7 +41,7 @@ struct PersistenceController {
         newPokemon.speed = 45
         newPokemon.spriteURL = URL(string: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png")
         newPokemon.shinyURL = URL(string: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/1.png")
-        
+
         do {
             try viewContext.save()
         } catch {
@@ -57,12 +57,15 @@ struct PersistenceController {
     /// - Parameter inMemory: Se verdadeiro, armazena os dados em memória (/dev/null) em vez do disco.
     init(inMemory: Bool = false) {
         container = NSPersistentContainer(name: "Dex")
-        
+
         if inMemory {
             // Configura o local do armazenamento para nulo para evitar persistência em disco.
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
+        } else {
+            container.persistentStoreDescriptions.first!.url = FileManager.default
+                .containerURL(forSecurityApplicationGroupIdentifier: "group.jeancamargoreal.DexGroup")!.appending(path: "Dex.sqlite")
         }
-        
+
         // Carrega os armazenamentos persistentes.
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
@@ -75,7 +78,7 @@ struct PersistenceController {
                 print(error)
             }
         })
-        
+
         // Garante que as mudanças no contexto pai sejam automaticamente mescladas no viewContext.
         container.viewContext.mergePolicy = NSMergePolicy.mergeByPropertyStoreTrump
         container.viewContext.automaticallyMergesChangesFromParent = true

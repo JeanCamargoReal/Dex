@@ -7,12 +7,25 @@
 		<key>Dex.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<key>DexWidgetExtension.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>C51C8C5B2F5B4249003931BF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C5F8A1ED2F79C8500086121B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
