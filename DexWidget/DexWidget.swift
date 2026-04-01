@@ -70,7 +70,7 @@ struct SimpleEntry: TimelineEntry {
         SimpleEntry(
             date: .now,
             name: "mew",
-            types: ["psyhic"],
+            types: ["psychic"],
             sprite: Image(.mew)
         )
     }
@@ -80,11 +80,75 @@ struct SimpleEntry: TimelineEntry {
 // A View que define a interface visual do widget.
 // Recebe uma entry do Provider e usa seus dados para renderizar o conteúdo.
 struct DexWidgetEntryView : View {
+    @Environment(\.widgetFamily) var widgetSize
+    
     var entry: Provider.Entry
+    
+    var pokemonImage: some View {
+        entry.sprite
+            .interpolation(.none)
+            .resizable()
+            .scaledToFit()
+            .shadow(color:.black, radius: 6)
+    }
+    
+    var typesView: some View {
+        ForEach(entry.types, id: \.self) { type in
+            Text(type.capitalized)
+                .font(.subheadline)
+                .fontWeight(.semibold)
+                .foregroundStyle(.black)
+                .padding(.horizontal, 13)
+                .padding(.vertical, 5)
+                .background(Color(type.description.capitalized))
+                .clipShape(.capsule)
+                .shadow(radius: 3)
+        }
+    }
 
     var body: some View {
-        VStack {
-            entry.sprite
+        switch widgetSize {
+        case .systemMedium:
+            HStack {
+                pokemonImage
+                
+                Spacer()
+                
+                VStack(alignment: .leading) {
+                    Text(entry.name.capitalized)
+                        .font(.title)
+                        .padding(.vertical, 1)
+                    
+                    HStack {
+                        typesView
+                    }
+                }
+                .layoutPriority(1)
+                
+                Spacer()
+            }
+        case .systemLarge:
+            ZStack {
+                pokemonImage
+                
+                VStack(alignment: .leading) {
+                    Text(entry.name.capitalized)
+                        .font(.largeTitle)
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.75)
+                    
+                    Spacer()
+                    
+                    HStack {
+                        Spacer()
+                        
+                        typesView
+                    }
+                }
+            }
+            
+        default:
+            pokemonImage
         }
     }
 }
@@ -102,8 +166,12 @@ struct DexWidget: Widget {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
             if #available(iOS 17.0, *) {
                 DexWidgetEntryView(entry: entry)
+                    .foregroundStyle(.black)
                     // containerBackground: define o fundo do widget (obrigatório no iOS 17+)
-                    .containerBackground(.fill.tertiary, for: .widget)
+                    .containerBackground(
+                        Color(entry.types[0].capitalized),
+                        for: .widget
+                    )
             } else {
                 DexWidgetEntryView(entry: entry)
                     .padding()
@@ -111,9 +179,9 @@ struct DexWidget: Widget {
             }
         }
         // Nome exibido na galeria de widgets
-        .configurationDisplayName("My Widget")
+        .configurationDisplayName("Pokemon")
         // Descrição exibida na galeria de widgets
-        .description("This is an example widget.")
+        .description("See a random Pokemon.")
     }
 }
 
@@ -122,6 +190,20 @@ struct DexWidget: Widget {
 // O parâmetro .systemSmall define o tamanho do widget na preview.
 // O bloco `timeline` define as entries que serão usadas na simulação.
 #Preview(as: .systemSmall) {
+    DexWidget()
+} timeline: {
+    SimpleEntry.placeholder
+    SimpleEntry.placeholder2
+}
+
+#Preview(as: .systemMedium) {
+    DexWidget()
+} timeline: {
+    SimpleEntry.placeholder
+    SimpleEntry.placeholder2
+}
+
+#Preview(as: .systemLarge) {
     DexWidget()
 } timeline: {
     SimpleEntry.placeholder
