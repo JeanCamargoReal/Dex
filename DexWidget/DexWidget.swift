@@ -14,18 +14,28 @@ import CoreData
 // Ele conforma ao protocolo TimelineProvider, que exige 3 funções obrigatórias.
 struct Provider: TimelineProvider {
     var randomPokemon: Pokemon {
-        var results: [Pokemon] = []
-        
         do {
-            results = try PersistenceController.shared.container.viewContext
-                .fetch(Pokemon.fetchRequest())
+            let context = PersistenceController.shared.container.viewContext
+
+            let request: NSFetchRequest<Pokemon> = Pokemon.fetchRequest()
+            request.predicate = NSPredicate(format: "sprite != nil")
+
+            let pokemonWithSprite = try context.fetch(request)
+
+            if let randomPokemon = pokemonWithSprite.randomElement() {
+                return randomPokemon
+            }
+
+            let fallbackRequest: NSFetchRequest<Pokemon> = Pokemon.fetchRequest()
+            let allPokemon = try context.fetch(fallbackRequest)
+
+            if let randomPokemon = allPokemon.randomElement() {
+                return randomPokemon
+            }
         } catch {
             print("Couldn't fetch: \(error)")
         }
-        
-        if let randomPokemon = results.randomElement() {
-            return randomPokemon
-        }
+
         return PersistenceController.previewPokemon
     }
 

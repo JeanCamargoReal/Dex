@@ -7,6 +7,7 @@
 
 import SwiftUI
 import CoreData
+import WidgetKit
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
@@ -205,6 +206,8 @@ struct ContentView: View {
                     
                     print("Sprites stored: \(pokemon.id): \(pokemon.name!.capitalized)")
                 }
+
+                WidgetCenter.shared.reloadTimelines(ofKind: "DexWidget")
             } catch {
                 print(error)
             }

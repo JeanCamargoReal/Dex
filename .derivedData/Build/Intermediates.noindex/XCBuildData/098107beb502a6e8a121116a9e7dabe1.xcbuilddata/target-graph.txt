@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+Target 'Dex' in project 'Dex'
+➜ Explicit dependency on target 'DexWidgetExtension' in project 'Dex'
+Target 'DexWidgetExtension' in project 'Dex' (no dependencies)

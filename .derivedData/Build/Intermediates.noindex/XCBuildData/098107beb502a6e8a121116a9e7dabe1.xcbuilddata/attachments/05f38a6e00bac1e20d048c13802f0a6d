@@ -1,0 +1,129 @@
+{
+  "" : {
+    "diagnostics" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Dex-primary.dia",
+    "emit-module-dependencies" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Dex-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Dex-primary-emit-module.dia",
+    "pch" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Dex-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Dex-primary.swiftdeps"
+  },
+  "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/DerivedSources/CoreDataGenerated/Dex/Dex+CoreDataModel.swift" : {
+    "const-values" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Dex+CoreDataModel.swiftconstvalues",
+    "dependencies" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Dex+CoreDataModel.d",
+    "diagnostics" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Dex+CoreDataModel.dia",
+    "index-unit-output-path" : "/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Dex+CoreDataModel.o",
+    "llvm-bc" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Dex+CoreDataModel.bc",
+    "object" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Dex+CoreDataModel.o",
+    "swift-dependencies" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Dex+CoreDataModel.swiftdeps",
+    "swiftmodule" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Dex+CoreDataModel~partial.swiftmodule"
+  },
+  "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/DerivedSources/CoreDataGenerated/Dex/Pokemon+CoreDataClass.swift" : {
+    "const-values" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Pokemon+CoreDataClass.swiftconstvalues",
+    "dependencies" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Pokemon+CoreDataClass.d",
+    "diagnostics" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Pokemon+CoreDataClass.dia",
+    "index-unit-output-path" : "/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Pokemon+CoreDataClass.o",
+    "llvm-bc" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Pokemon+CoreDataClass.bc",
+    "object" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Pokemon+CoreDataClass.o",
+    "swift-dependencies" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Pokemon+CoreDataClass.swiftdeps",
+    "swiftmodule" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Pokemon+CoreDataClass~partial.swiftmodule"
+  },
+  "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/DerivedSources/CoreDataGenerated/Dex/Pokemon+CoreDataProperties.swift" : {
+    "const-values" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Pokemon+CoreDataProperties.swiftconstvalues",
+    "dependencies" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Pokemon+CoreDataProperties.d",
+    "diagnostics" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Pokemon+CoreDataProperties.dia",
+    "index-unit-output-path" : "/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Pokemon+CoreDataProperties.o",
+    "llvm-bc" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Pokemon+CoreDataProperties.bc",
+    "object" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Pokemon+CoreDataProperties.o",
+    "swift-dependencies" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Pokemon+CoreDataProperties.swiftdeps",
+    "swiftmodule" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Pokemon+CoreDataProperties~partial.swiftmodule"
+  },
+  "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  },
+  "/Users/jeancamargo/Developer/iOS/Dex/Dex/ContentView.swift" : {
+    "const-values" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/ContentView.d",
+    "diagnostics" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/ContentView.dia",
+    "index-unit-output-path" : "/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/ContentView.o",
+    "swift-dependencies" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/ContentView~partial.swiftmodule"
+  },
+  "/Users/jeancamargo/Developer/iOS/Dex/Dex/DexApp.swift" : {
+    "const-values" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/DexApp.swiftconstvalues",
+    "dependencies" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/DexApp.d",
+    "diagnostics" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/DexApp.dia",
+    "index-unit-output-path" : "/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/DexApp.o",
+    "llvm-bc" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/DexApp.bc",
+    "object" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/DexApp.o",
+    "swift-dependencies" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/DexApp.swiftdeps",
+    "swiftmodule" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/DexApp~partial.swiftmodule"
+  },
+  "/Users/jeancamargo/Developer/iOS/Dex/Dex/FetchService.swift" : {
+    "const-values" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/FetchService.swiftconstvalues",
+    "dependencies" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/FetchService.d",
+    "diagnostics" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/FetchService.dia",
+    "index-unit-output-path" : "/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/FetchService.o",
+    "llvm-bc" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/FetchService.bc",
+    "object" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/FetchService.o",
+    "swift-dependencies" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/FetchService.swiftdeps",
+    "swiftmodule" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/FetchService~partial.swiftmodule"
+  },
+  "/Users/jeancamargo/Developer/iOS/Dex/Dex/FetchedPokemon.swift" : {
+    "const-values" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/FetchedPokemon.swiftconstvalues",
+    "dependencies" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/FetchedPokemon.d",
+    "diagnostics" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/FetchedPokemon.dia",
+    "index-unit-output-path" : "/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/FetchedPokemon.o",
+    "llvm-bc" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/FetchedPokemon.bc",
+    "object" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/FetchedPokemon.o",
+    "swift-dependencies" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/FetchedPokemon.swiftdeps",
+    "swiftmodule" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/FetchedPokemon~partial.swiftmodule"
+  },
+  "/Users/jeancamargo/Developer/iOS/Dex/Dex/Persistence.swift" : {
+    "const-values" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Persistence.swiftconstvalues",
+    "dependencies" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Persistence.d",
+    "diagnostics" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Persistence.dia",
+    "index-unit-output-path" : "/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Persistence.o",
+    "llvm-bc" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Persistence.bc",
+    "object" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Persistence.o",
+    "swift-dependencies" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Persistence.swiftdeps",
+    "swiftmodule" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Persistence~partial.swiftmodule"
+  },
+  "/Users/jeancamargo/Developer/iOS/Dex/Dex/PokemonDetail.swift" : {
+    "const-values" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/PokemonDetail.swiftconstvalues",
+    "dependencies" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/PokemonDetail.d",
+    "diagnostics" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/PokemonDetail.dia",
+    "index-unit-output-path" : "/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/PokemonDetail.o",
+    "llvm-bc" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/PokemonDetail.bc",
+    "object" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/PokemonDetail.o",
+    "swift-dependencies" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/PokemonDetail.swiftdeps",
+    "swiftmodule" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/PokemonDetail~partial.swiftmodule"
+  },
+  "/Users/jeancamargo/Developer/iOS/Dex/Dex/PokemonExt.swift" : {
+    "const-values" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/PokemonExt.swiftconstvalues",
+    "dependencies" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/PokemonExt.d",
+    "diagnostics" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/PokemonExt.dia",
+    "index-unit-output-path" : "/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/PokemonExt.o",
+    "llvm-bc" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/PokemonExt.bc",
+    "object" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/PokemonExt.o",
+    "swift-dependencies" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/PokemonExt.swiftdeps",
+    "swiftmodule" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/PokemonExt~partial.swiftmodule"
+  },
+  "/Users/jeancamargo/Developer/iOS/Dex/Dex/Stats.swift" : {
+    "const-values" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Stats.swiftconstvalues",
+    "dependencies" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Stats.d",
+    "diagnostics" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Stats.dia",
+    "index-unit-output-path" : "/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Stats.o",
+    "llvm-bc" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Stats.bc",
+    "object" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Stats.o",
+    "swift-dependencies" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Stats.swiftdeps",
+    "swiftmodule" : "/Users/jeancamargo/Developer/iOS/Dex/.derivedData/Build/Intermediates.noindex/Dex.build/Debug-iphoneos/Dex.build/Objects-normal/arm64/Stats~partial.swiftmodule"
+  }
+}
